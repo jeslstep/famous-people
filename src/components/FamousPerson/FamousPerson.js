@@ -31,7 +31,16 @@ class FamousPerson extends Component {
         <input onChange={ this.handleChangeFor('role') } />
         <br/>
         <h1>Added Famous People:</h1>
-        <p>{this.state.user.name} is famous for {this.state.user.role}</p>
+        <table align="center">
+          <thead>
+            <th>Name</th>
+            <th>Role</th>
+          </thead>
+          <tbody>
+            <td>{this.state.user.name}</td>
+            <td>{this.state.user.role}</td>
+          </tbody>
+        </table>
       </div>
     );
   }
